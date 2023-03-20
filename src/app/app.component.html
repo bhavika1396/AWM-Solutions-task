@@ -1,0 +1,171 @@
+<!-- <app-card (buttonClicked)="buttonTriggered($event)" >Button 1</app-card>
+<app-card (buttonClicked)="buttonTriggered($event)" >Button 2</app-card> -->
+<div class="container-fluid" style="background-color: #f6f6f6;">
+  <div class="container pb-4">
+    <!-- <img src="/assets/Images/logo.svg"> -->
+    <div class="text-center">
+        <svg width="150" height="150" class="me-2" xmlns="http://www.w3.org/2000/svg">
+      <image href="/assets/Images/logo.svg" height="150" width="150"  />
+    </svg>
+    </div>
+  
+    <div class="row  d-flex justify-content-center">
+      <div class="col-md-4 col-lg-3 ">
+        <app-card>
+          <mat-card-header>
+            <mat-card-title style="color: #555555; font-weight: 600;">Air Quality</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="row" style="align-items: center;">
+              <div class="col-auto">
+                <h1 class="rounded-circle p-3"
+                  style="color: white; background-color: #6DD0A5; font-weight: 800; font-size: 50px;">
+                  72
+                </h1>
+              </div>
+  
+              <div class="col">
+                <div class="d-flex align-items-center" style="white-space: nowrap !important;">
+                  <i class="fa fa-arrow-up  fa-fw" style="color: #6DD0A5; font-size: 22px;" aria-hidden="true"></i>
+                  <!-- <i class="fa fa-long-arrow-up fa-fw fa-lg" style="color: #6DD0A5;"  aria-hidden="true"></i> -->
+                  <h2 style=" color: #999999; font-weight: 800;">93</h2>
+                </div>
+                <div style="border: 1px solid #e0e0e0;"></div>
+                <div class="d-flex align-items-center" style="white-space: nowrap !important;">
+                  <i class="fa fa-arrow-down  fa-fw " style="color: #fbbd43; font-size: 22px;" aria-hidden="true"></i>
+                  <!-- <i class="fa fa-long-arrow-up fa-fw fa-lg" style="color: #6DD0A5;"  aria-hidden="true"></i> -->
+                  <h2 style=" color: #999999; font-weight: 800;">91</h2>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </app-card>
+      </div>
+      <div class="col-md-4 col-lg-3 mt-4 mt-md-0">
+        <app-card>
+          <mat-card-header>
+            <mat-card-title style="color: #555555; font-weight: 600;">Temperature</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="row" style="align-items: center;">
+              <div class="col-auto rounded-circle d-flex align-items-center p-2"
+                style="color: white; background-color: #5448C8; ">
+                <h1 class="" style="font-size: 50px; font-weight: 800;">
+                  21</h1><span style="font-size: large;">°C</span>
+  
+              </div>
+  
+              <div class="col">
+                <div class="d-flex align-items-center" style="white-space: nowrap !important;">
+                  <!-- <i class="fa fa-arrow-up  fa-fw" style="color: #6DD0A5; font-size: 22px;" aria-hidden="true"></i> -->
+                  <!-- <i class="fa fa-long-arrow-up fa-fw fa-lg" style="color: #6DD0A5;"  aria-hidden="true"></i> -->
+                  <svg width="15" height="15" class="me-2" xmlns="http://www.w3.org/2000/svg">
+                    <image href="/assets/Images/fire.svg" height="15" width="15" />
+                  </svg>
+                  <h2 style=" color: #999999; font-weight: 800;">26
+                  </h2><span style="font-size: large; color: #acacac ;">°C</span>
+  
+                </div>
+                <div style="border: 1px solid #e0e0e0;"></div>
+                <div class="d-flex align-items-center" style="white-space: nowrap !important;">
+                  <!-- <i class="fa fa-arrow-down  fa-fw " style="color: #fbbd43; font-size: 22px;" aria-hidden="true"></i> -->
+                  <!-- <i class="fa fa-long-arrow-up fa-fw fa-lg" style="color: #6DD0A5;"  aria-hidden="true"></i> -->
+                  <svg width="15" height="15" class="me-2" xmlns="http://www.w3.org/2000/svg">
+                    <image href="/assets/Images/snowflake.svg" height="15" width="15" />
+                  </svg>
+                  <h2 style=" color: #999999; font-weight: 800;">18</h2><span
+                    style="font-size: large; color: #acacac ;">°C</span>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </app-card>
+      </div>
+      <div class="col-md col-lg-3 mt-4 mt-md-0">
+        <app-card>
+          <mat-card-header>
+            <mat-card-title style="color: #333333; font-weight: 600;">Audio</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="row mt-3" style="align-items: center;">
+              <div class="col-auto col-md-4 col-lg-auto" style="">
+                <h1 class="" style="color: #5448C8; font-weight: 800; font-size: 75px;">
+                  2
+                </h1>
+              </div>
+              <div class="col col-md-4 col-lg" style="align-self: center;">
+                <p class="px-3 px-md-0  py-1 font-size-mobile" style="text-transform: uppercase; color: white; background-color: #6DD0A5; text-align: center;     border-radius: var(--mdc-elevated-card-container-shape, var(--mdc-shape-medium, 6px)) !important;
+    ">playing</p>
+              </div>
+              <div class="col col-md-4 col-lg" style="">
+                <div class="d-flex align-items-center" style="white-space: nowrap !important;">
+                  <p class="mb-0" style=" color: #999999; font-size: small;">Total</p>
+                </div>
+                <div class="d-flex align-items-center" style="white-space: nowrap !important;">
+                  <h2 style=" color: #999999; font-weight: 800;">5</h2>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </app-card>
+      </div>
+   
+    </div>
+    <div class="row mt-4 d-flex justify-content-center">
+      <div class="col-md-auto col-lg-3">
+        <app-card>
+          <mat-card-header>
+            <mat-card-title style="color: #333333; font-weight: 600;">Displays</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="row mt-3" style="align-items: center;">
+              <div class="col-auto d-flex align-items-center" style=" border-right: 1px solid #e0e0e0;">
+                <h1 style="color: #5448C8; font-weight: 800; font-size: 75px;">
+                  10
+                </h1>
+                <span style="font-weight: 900; color: #5448C8;">/ 16</span>
+              </div>
+              
+              <div class="col">
+                <div class="d-flex align-items-center" style="white-space: nowrap !important;">
+                  <p class="mb-0 " style=" color: #999999; font-size: small;">On Time</p>
+                </div>
+                <div class="d-flex align-items-center" style="white-space: nowrap !important;">
+                  <h2 style=" color: #999999; font-weight: 800;">00:00</h2>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </app-card>
+      </div>
+      <div class="col-md-auto col-lg-3 mt-4 mt-md-0">
+        <app-card>
+          <mat-card-header>
+            <mat-card-title style="color: #333333; font-weight: 600;">Lighting</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="row mt-3" style="align-items: center;">
+              <div class="col-auto" style="">
+                <h1 class="" style="color: #5448C8; font-weight: 800; font-size: 75px;">
+                  32
+                </h1>
+              </div>
+              <div class="col" style="align-self: center;">
+                <p class="px-3 py-1 font-size-mobile"style="text-transform: uppercase; color: white; background-color: #6DD0A5; text-align: center;     border-radius: var(--mdc-elevated-card-container-shape, var(--mdc-shape-medium, 6px)) !important;
+    ">on</p>
+              </div>
+              <div class="col">
+                <div class="d-flex align-items-center" style="white-space: nowrap !important;">
+                  <p class="mb-0 " style=" color: #999999; font-size: small;">Total</p>
+                </div>
+                <div class="d-flex align-items-center" style="white-space: nowrap !important;">
+                  <h2 style=" color: #999999; font-weight: 800;">43 </h2>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </app-card>
+      </div>
+    </div>
+  </div>
+</div>
